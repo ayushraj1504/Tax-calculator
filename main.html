@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tax Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Tax Calculator</h1>
+        <form id="taxForm">
+            <div class="input-group">
+                <label for="grossIncome">Enter gross annual income:</label>
+                <div class="info-icon"><i class="fas fa-info-circle"></i></div>
+                <input type="text" id="grossIncome" class="number-input" required>
+                <div class="error-icon"></div>
+                
+            </div>
+        <div class="input-group">
+            <label for="extraIncome">Enter extra income:</label>
+            <div class="info-icon"><i class="fas fa-info-circle"></i></div>
+            <input type="text" id="extraIncome">
+            <div class="error-icon"></div>
+        </div>
+        <div class="input-group">
+            <label for="ageGroup">Enter age group:</label>
+            <select id="ageGroup">
+                <option value="<40">&lt; 40</option>
+                <option value="40-60">≥ 40 &amp; &lt; 60</option>
+                <option value=">=60">≥ 60</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="totalDeductions">Enter total applicable deductions:</label>
+            <div class="info-icon"><i class="fas fa-info-circle"></i></div>
+            <input type="text" id="totalDeductions">
+            <div class="error-icon"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<!-- Modal -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="resultText"></p>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script src="script.js"></script>
+<!-- ////////////////////AYUSH_RAJ////////////////// -->
+</body>
+</html>
